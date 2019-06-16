@@ -52,6 +52,10 @@ class BottomContainerViewController: UIViewController {
         let input = input1.trimmingCharacters(in: .whitespacesAndNewlines)
         let numberCharacters = NSCharacterSet.decimalDigits.inverted
         
+        // Input from user has to be less than 10 digits.
+        if(!validateLength(input)){
+            return false
+        }
         //After removing whitespaces checking if it not empty and it is a number
         if !input.isEmpty && input.rangeOfCharacter(from: numberCharacters) == nil {
             
@@ -65,6 +69,16 @@ class BottomContainerViewController: UIViewController {
             showToast(controller: self, message : "Check Your Input.", seconds: 2.0)
             return false
             
+        }
+    }
+    
+    func validateLength(_ input: String)-> Bool{
+        
+        if (input.count  > 10){
+            showToast(controller: self, message : "Input must be less than 10 digits.", seconds: 2.0)
+            return false
+        }else{
+            return true
         }
     }
     

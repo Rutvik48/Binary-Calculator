@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9rounded" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eHw-Eo-0MO">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="N27-z9-bw0" userLabel="ContainerStack">
-                                <rect key="frame" x="0.0" y="54" width="1024" height="1262"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="656"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHe-oU-wJB">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="631"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="OzE-i6-jkP" kind="embed" id="11i-JT-qd4"/>
-                                        </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEN-DX-7Jq">
-                                        <rect key="frame" x="0.0" y="631" width="1024" height="631"/>
+                                        <rect key="frame" x="0.0" y="328" width="414" height="328"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="CU3-Ip-uJ4" kind="embed" id="D5u-cn-9PB"/>
@@ -50,24 +47,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="47"/>
+            <point key="canvasLocation" x="-3262" y="36"/>
         </scene>
         <!--Top Container View Controller-->
         <scene sceneID="Na8-sM-Gex">
             <objects>
                 <viewController id="OzE-i6-jkP" customClass="TopContainerViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zbF-d0-xy8">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="631"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="265"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-dj-p5W" customClass="BinaryGenerator">
-                                <rect key="frame" x="20" y="24" width="984" height="587"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="265"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SUv-LS-2Z3">
-                                        <rect key="frame" x="20" y="20" width="944" height="54"/>
+                                        <rect key="frame" x="20" y="20" width="334" height="54"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncK-tW-GXw">
-                                                <rect key="frame" x="0.0" y="0.0" width="944" height="54"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="54"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                                 <state key="normal" title="Select Calculator Mode">
@@ -78,30 +75,32 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6Q-oJ-VxV" userLabel="Binary Generator">
-                                                <rect key="frame" x="0.0" y="0.0" width="944" height="0.0"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="0.0"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="35"/>
                                                 <state key="normal" title="Binary Generator">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="modeSelected:" destination="OzE-i6-jkP" eventType="touchUpInside" id="UFJ-T9-tHn"/>
+                                                    <segue destination="eHw-Eo-0MO" kind="show" id="sFV-3n-Whm"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ji-FR-1BM" userLabel="Decimal Generator">
-                                                <rect key="frame" x="0.0" y="0.0" width="944" height="0.0"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="0.0"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="35"/>
                                                 <state key="normal" title="Decimal Generator">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="modeSelected:" destination="OzE-i6-jkP" eventType="touchUpInside" id="imG-EG-c72"/>
+                                                    <segue destination="lID-K2-4Bh" kind="show" id="j4O-64-iq2"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n1-IS-hgI">
-                                                <rect key="frame" x="0.0" y="0.0" width="944" height="0.0"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="0.0"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="35"/>
                                                 <state key="normal" title="Binary Addition">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,8 +110,8 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVl-Kr-3Wc">
-                                                <rect key="frame" x="0.0" y="0.0" width="944" height="0.0"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="0.0"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="35"/>
                                                 <state key="normal" title="Binary Multiplication">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -124,7 +123,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="SUv-LS-2Z3" secondAttribute="trailing" constant="20" id="UDI-GT-0A8"/>
                                     <constraint firstItem="SUv-LS-2Z3" firstAttribute="top" secondItem="LBC-dj-p5W" secondAttribute="top" constant="20" id="ofz-Av-XBC"/>
@@ -151,33 +150,174 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9A-fx-9rV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824.4140625" y="8.1259150805270863"/>
+            <point key="canvasLocation" x="61" y="-98"/>
+        </scene>
+        <!--Decimal Generator View Controller-->
+        <scene sceneID="4W4-N9-S23">
+            <objects>
+                <viewController id="lID-K2-4Bh" customClass="DecimalGeneratorViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qlc-py-3cO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-Kp-DQq" userLabel="topStack">
+                                <rect key="frame" x="20" y="285" width="374" height="166"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter binary here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vns-vF-UDE">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="42"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p42-y2-TGy">
+                                        <rect key="frame" x="146.33333333333334" y="62" width="81.333333333333343" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqn-1n-ewv">
+                                        <rect key="frame" x="20" y="124" width="334" height="42"/>
+                                        <color key="backgroundColor" red="0.42503788790000002" green="0.7441258181" blue="1" alpha="0.28903499119999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Generate Decimal"/>
+                                        <connections>
+                                            <action selector="btn1:" destination="CU3-Ip-uJ4" eventType="touchUpInside" id="lTL-oA-Jxv"/>
+                                            <action selector="btn1:" destination="eHw-Eo-0MO" eventType="touchUpInside" id="srg-zN-1nS"/>
+                                            <action selector="generateDecimalBtn:" destination="lID-K2-4Bh" eventType="touchUpInside" id="hxB-k4-gXA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qqn-1n-ewv" firstAttribute="leading" secondItem="OW6-Kp-DQq" secondAttribute="leading" constant="20" id="5oi-Dp-tMP"/>
+                                    <constraint firstItem="Vns-vF-UDE" firstAttribute="leading" secondItem="OW6-Kp-DQq" secondAttribute="leading" constant="20" id="FEK-fU-M7X"/>
+                                    <constraint firstAttribute="trailing" secondItem="qqn-1n-ewv" secondAttribute="trailing" constant="20" id="ZzH-2f-0ag"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vns-vF-UDE" secondAttribute="trailing" constant="20" id="nfR-N3-0Ia"/>
+                                </constraints>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-0M-GFw">
+                                <rect key="frame" x="0.0" y="756" width="414" height="265"/>
+                                <connections>
+                                    <segue destination="OzE-i6-jkP" kind="embed" id="10l-rG-G57"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="si6-Eh-gMs" firstAttribute="trailing" secondItem="OW6-Kp-DQq" secondAttribute="trailing" constant="20" id="2di-QE-3Gr"/>
+                            <constraint firstItem="OW6-Kp-DQq" firstAttribute="leading" secondItem="si6-Eh-gMs" secondAttribute="leading" constant="20" id="5Zk-ci-Xfu"/>
+                            <constraint firstItem="OW6-Kp-DQq" firstAttribute="centerX" secondItem="Qlc-py-3cO" secondAttribute="centerX" id="GgI-RS-diX"/>
+                            <constraint firstItem="OW6-Kp-DQq" firstAttribute="centerY" secondItem="Qlc-py-3cO" secondAttribute="centerY" id="UnS-v6-MU8"/>
+                            <constraint firstItem="si6-Eh-gMs" firstAttribute="trailing" secondItem="H0v-0M-GFw" secondAttribute="trailing" id="VLQ-U5-2bs"/>
+                            <constraint firstItem="H0v-0M-GFw" firstAttribute="top" secondItem="si6-Eh-gMs" secondAttribute="top" id="cV5-YV-Gez"/>
+                            <constraint firstItem="OW6-Kp-DQq" firstAttribute="top" secondItem="H0v-0M-GFw" secondAttribute="bottom" id="fDc-bC-jzK"/>
+                            <constraint firstItem="H0v-0M-GFw" firstAttribute="leading" secondItem="si6-Eh-gMs" secondAttribute="leading" id="qa2-Od-kCa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="si6-Eh-gMs"/>
+                    </view>
+                    <connections>
+                        <outlet property="ansLabel" destination="p42-y2-TGy" id="bWJ-5I-Uv8"/>
+                        <outlet property="textField" destination="Vns-vF-UDE" id="J8e-jd-Iet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXA-0V-khW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="94"/>
+        </scene>
+        <!--Bottom Container View Controller-->
+        <scene sceneID="cub-3L-BVg">
+            <objects>
+                <viewController id="eHw-Eo-0MO" customClass="BottomContainerViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sno-PU-22q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="265"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-Os-mU8" userLabel="topStack">
+                                <rect key="frame" x="20" y="49.666666666666657" width="374" height="166"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-Yw-rez">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="42"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1B-sG-PBE">
+                                        <rect key="frame" x="146.33333333333334" y="62" width="81.333333333333343" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9w-7U-Xrf">
+                                        <rect key="frame" x="20" y="124" width="334" height="42"/>
+                                        <color key="backgroundColor" red="0.42503788790000002" green="0.7441258181" blue="1" alpha="0.28903499119999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Generate Binary"/>
+                                        <connections>
+                                            <action selector="btn1:" destination="CU3-Ip-uJ4" eventType="touchUpInside" id="5SJ-dm-JDB"/>
+                                            <action selector="btn1:" destination="eHw-Eo-0MO" eventType="touchUpInside" id="5lg-bZ-x4M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aDB-Yw-rez" secondAttribute="trailing" constant="20" id="Nb3-zt-12n"/>
+                                    <constraint firstItem="f9w-7U-Xrf" firstAttribute="leading" secondItem="dh7-Os-mU8" secondAttribute="leading" constant="20" id="fAf-4d-zD0"/>
+                                    <constraint firstAttribute="trailing" secondItem="f9w-7U-Xrf" secondAttribute="trailing" constant="20" id="thY-b0-Phc"/>
+                                    <constraint firstItem="aDB-Yw-rez" firstAttribute="leading" secondItem="dh7-Os-mU8" secondAttribute="leading" constant="20" id="uiC-G7-CBi"/>
+                                </constraints>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-Zc-8RU">
+                                <rect key="frame" x="0.0" y="-471" width="414" height="50"/>
+                                <connections>
+                                    <segue destination="OzE-i6-jkP" kind="embed" id="eU1-x2-t5F"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dh7-Os-mU8" firstAttribute="leading" secondItem="Ln6-Q3-mkW" secondAttribute="leading" constant="20" id="9Yz-WB-NT8"/>
+                            <constraint firstItem="dh7-Os-mU8" firstAttribute="centerY" secondItem="sno-PU-22q" secondAttribute="centerY" id="ALb-8I-uJP"/>
+                            <constraint firstItem="dh7-Os-mU8" firstAttribute="centerX" secondItem="sno-PU-22q" secondAttribute="centerX" id="LBh-8d-Zsd"/>
+                            <constraint firstItem="dh7-Os-mU8" firstAttribute="top" secondItem="IXU-Zc-8RU" secondAttribute="bottom" id="LSm-tc-SbB"/>
+                            <constraint firstItem="Ln6-Q3-mkW" firstAttribute="trailing" secondItem="IXU-Zc-8RU" secondAttribute="trailing" id="N1q-QQ-Pb0"/>
+                            <constraint firstItem="IXU-Zc-8RU" firstAttribute="leading" secondItem="Ln6-Q3-mkW" secondAttribute="leading" id="f8A-Ey-SNn"/>
+                            <constraint firstItem="IXU-Zc-8RU" firstAttribute="top" secondItem="Ln6-Q3-mkW" secondAttribute="top" id="feU-nn-aRJ"/>
+                            <constraint firstItem="Ln6-Q3-mkW" firstAttribute="trailing" secondItem="dh7-Os-mU8" secondAttribute="trailing" constant="20" id="mkv-sw-8Ud"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ln6-Q3-mkW"/>
+                    </view>
+                    <connections>
+                        <outlet property="ans1" destination="i1B-sG-PBE" id="5HZ-k4-VXR"/>
+                        <outlet property="num1" destination="aDB-Yw-rez" id="VIN-pV-LAf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2iI-TQ-xZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-629" y="94"/>
         </scene>
         <!--Bottom Container View Controller-->
         <scene sceneID="gI5-fc-Lb4">
             <objects>
                 <viewController id="CU3-Ip-uJ4" customClass="BottomContainerViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oEP-jW-L3H">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="631"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AKM-vj-MSg" userLabel="topStack">
-                                <rect key="frame" x="425.5" y="237.5" width="173" height="156"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AKM-vj-MSg" userLabel="topStack">
+                                <rect key="frame" x="10" y="5" width="394" height="166"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Zz-RK-GEY">
-                                        <rect key="frame" x="10.5" y="0.0" width="152.5" height="42"/>
+                                        <rect key="frame" x="20" y="0.0" width="354" height="42"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN9-b5-kyL">
-                                        <rect key="frame" x="46" y="57" width="81.5" height="42"/>
+                                        <rect key="frame" x="156.33333333333334" y="62" width="81.333333333333343" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZN-l5-KD9">
-                                        <rect key="frame" x="0.0" y="114" width="173" height="42"/>
+                                        <rect key="frame" x="20" y="124" width="354" height="42"/>
                                         <color key="backgroundColor" red="0.42503788790000002" green="0.7441258181" blue="1" alpha="0.28903499119999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Generate Binary"/>
@@ -186,12 +326,19 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="fZN-l5-KD9" firstAttribute="leading" secondItem="AKM-vj-MSg" secondAttribute="leading" constant="20" id="BNl-bR-CkX"/>
+                                    <constraint firstAttribute="trailing" secondItem="fZN-l5-KD9" secondAttribute="trailing" constant="20" id="Cd2-fl-4bb"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Zz-RK-GEY" secondAttribute="trailing" constant="20" id="oNz-xY-9Oy"/>
+                                    <constraint firstItem="2Zz-RK-GEY" firstAttribute="leading" secondItem="AKM-vj-MSg" secondAttribute="leading" constant="20" id="tRg-cb-exK"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AKM-vj-MSg" firstAttribute="centerY" secondItem="oEP-jW-L3H" secondAttribute="centerY" id="mbV-aZ-xdW"/>
-                            <constraint firstItem="AKM-vj-MSg" firstAttribute="centerX" secondItem="oEP-jW-L3H" secondAttribute="centerX" id="tvf-Ch-10a"/>
+                            <constraint firstItem="AKM-vj-MSg" firstAttribute="leading" secondItem="YQ2-BU-pMG" secondAttribute="leading" constant="10" id="3Dm-px-1qs"/>
+                            <constraint firstItem="AKM-vj-MSg" firstAttribute="top" secondItem="YQ2-BU-pMG" secondAttribute="top" constant="5" id="eJX-F8-gvi"/>
+                            <constraint firstItem="YQ2-BU-pMG" firstAttribute="trailing" secondItem="AKM-vj-MSg" secondAttribute="trailing" constant="10" id="qq8-ky-tmb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YQ2-BU-pMG"/>
                     </view>
@@ -202,7 +349,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldh-DA-Pq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="311"/>
+            <point key="canvasLocation" x="-2484" y="239"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="10l-rG-G57"/>
+    </inferredMetricsTieBreakers>
 </document>

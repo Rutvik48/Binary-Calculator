@@ -14,6 +14,7 @@
 		B3205A1A22B564A900DEBF8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3205A1822B564A900DEBF8D /* LaunchScreen.storyboard */; };
 		B3205A2222B5669C00DEBF8D /* TopContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3205A2122B5669C00DEBF8D /* TopContainerViewController.swift */; };
 		B3205A2422B566BA00DEBF8D /* BottomContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3205A2322B566BA00DEBF8D /* BottomContainerViewController.swift */; };
+		B3B16B9022B5BBD1007FD78A /* DecimalGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B16B8F22B5BBD1007FD78A /* DecimalGeneratorViewController.swift */; };
 		B3B4331522B5842A00B79B10 /* BinaryCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4331422B5842A00B79B10 /* BinaryCalculator.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		B3205A1B22B564A900DEBF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3205A2122B5669C00DEBF8D /* TopContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopContainerViewController.swift; sourceTree = "<group>"; };
 		B3205A2322B566BA00DEBF8D /* BottomContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomContainerViewController.swift; sourceTree = "<group>"; };
+		B3B16B8F22B5BBD1007FD78A /* DecimalGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecimalGeneratorViewController.swift; path = ../../BinaryGenerator/BinaryGenerator/DecimalGeneratorViewController.swift; sourceTree = "<group>"; };
 		B3B4331422B5842A00B79B10 /* BinaryCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 			children = (
 				B3205A0F22B564A700DEBF8D /* AppDelegate.swift */,
 				B3205A1122B564A700DEBF8D /* ViewController.swift */,
+				B3B16B8F22B5BBD1007FD78A /* DecimalGeneratorViewController.swift */,
 				B3205A1322B564A700DEBF8D /* Main.storyboard */,
 				B3B4331422B5842A00B79B10 /* BinaryCalculator.swift */,
 				B3205A2122B5669C00DEBF8D /* TopContainerViewController.swift */,
@@ -146,6 +149,7 @@
 			files = (
 				B3205A1222B564A700DEBF8D /* ViewController.swift in Sources */,
 				B3B4331522B5842A00B79B10 /* BinaryCalculator.swift in Sources */,
+				B3B16B9022B5BBD1007FD78A /* DecimalGeneratorViewController.swift in Sources */,
 				B3205A2422B566BA00DEBF8D /* BottomContainerViewController.swift in Sources */,
 				B3205A1022B564A700DEBF8D /* AppDelegate.swift in Sources */,
 				B3205A2222B5669C00DEBF8D /* TopContainerViewController.swift in Sources */,
