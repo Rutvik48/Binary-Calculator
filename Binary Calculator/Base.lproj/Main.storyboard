@@ -10,55 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="N27-z9-bw0" userLabel="ContainerStack">
-                                <rect key="frame" x="0.0" y="50" width="414" height="656"/>
-                                <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHe-oU-wJB">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEN-DX-7Jq">
-                                        <rect key="frame" x="0.0" y="328" width="414" height="328"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="CU3-Ip-uJ4" kind="embed" id="D5u-cn-9PB"/>
-                                        </connections>
-                                    </containerView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N27-z9-bw0" secondAttribute="bottom" constant="30" id="3Ce-ta-kYH"/>
-                            <constraint firstItem="N27-z9-bw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Awd-5z-10F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N27-z9-bw0" secondAttribute="trailing" id="NH7-Ia-Zaw"/>
-                            <constraint firstItem="N27-z9-bw0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="g6n-18-lbX"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3262" y="36"/>
-        </scene>
         <!--Top Container View Controller-->
         <scene sceneID="Na8-sM-Gex">
             <objects>
                 <viewController id="OzE-i6-jkP" customClass="TopContainerViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zbF-d0-xy8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="265"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-dj-p5W" customClass="BinaryGenerator">
-                                <rect key="frame" x="20" y="0.0" width="374" height="265"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="0.0"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SUv-LS-2Z3">
                                         <rect key="frame" x="20" y="20" width="334" height="54"/>
@@ -152,16 +113,108 @@
             </objects>
             <point key="canvasLocation" x="61" y="-98"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Mak-qb-nUP">
+            <objects>
+                <viewController id="KG4-x4-p2h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ci-xh-4wp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Wa-s9-qHi" userLabel="topStack">
+                                <rect key="frame" x="20" y="254" width="374" height="228"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ETh-qi-Kxj" userLabel="firstEntry">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="42"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter binary here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wr0-WH-jOO">
+                                                <rect key="frame" x="0.0" y="0.0" width="219" height="42"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digit" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVd-Rp-l5r">
+                                                <rect key="frame" x="234" y="0.0" width="100" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Am0-fu-zah"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="q1u-dH-9J4" userLabel="secondEntry">
+                                        <rect key="frame" x="20" y="62" width="334" height="42"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter binary here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TfP-QY-t36">
+                                                <rect key="frame" x="0.0" y="0.0" width="219" height="42"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digit" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOy-2Z-NEt">
+                                                <rect key="frame" x="234" y="0.0" width="100" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="pzd-NQ-Zt7"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01y-02-J6q">
+                                        <rect key="frame" x="146.33333333333334" y="124" width="81.333333333333343" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yt-bd-Ty6">
+                                        <rect key="frame" x="20" y="186" width="334" height="42"/>
+                                        <color key="backgroundColor" red="0.42503788790000002" green="0.7441258181" blue="1" alpha="0.28903499119999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Generate Decimal"/>
+                                        <connections>
+                                            <action selector="btn1:" destination="eHw-Eo-0MO" eventType="touchUpInside" id="DiY-ow-hkS"/>
+                                            <action selector="generateDecimalBtn:" destination="lID-K2-4Bh" eventType="touchUpInside" id="dqu-px-0KE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q1u-dH-9J4" firstAttribute="leading" secondItem="2Wa-s9-qHi" secondAttribute="leading" constant="20" id="11F-2C-he4"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Yt-bd-Ty6" secondAttribute="trailing" constant="20" id="LBl-gS-IWe"/>
+                                    <constraint firstItem="ETh-qi-Kxj" firstAttribute="leading" secondItem="2Wa-s9-qHi" secondAttribute="leading" constant="20" id="p5y-oV-3rU"/>
+                                    <constraint firstAttribute="trailing" secondItem="q1u-dH-9J4" secondAttribute="trailing" constant="20" id="sXo-PK-lyl"/>
+                                    <constraint firstAttribute="trailing" secondItem="ETh-qi-Kxj" secondAttribute="trailing" constant="20" id="sx1-i4-53e"/>
+                                    <constraint firstItem="0Yt-bd-Ty6" firstAttribute="leading" secondItem="2Wa-s9-qHi" secondAttribute="leading" constant="20" id="zVA-7W-975"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Wa-s9-qHi" firstAttribute="leading" secondItem="zGp-wt-yrO" secondAttribute="leading" constant="20" id="Gmf-OV-2OY"/>
+                            <constraint firstItem="2Wa-s9-qHi" firstAttribute="centerX" secondItem="4Ci-xh-4wp" secondAttribute="centerX" id="ZmT-rM-anE"/>
+                            <constraint firstItem="zGp-wt-yrO" firstAttribute="trailing" secondItem="2Wa-s9-qHi" secondAttribute="trailing" constant="20" id="ZzL-aa-wNA"/>
+                            <constraint firstItem="2Wa-s9-qHi" firstAttribute="centerY" secondItem="4Ci-xh-4wp" secondAttribute="centerY" id="xhv-ZP-HWq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zGp-wt-yrO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFd-6n-aL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="573"/>
+        </scene>
         <!--Decimal Generator View Controller-->
         <scene sceneID="4W4-N9-S23">
             <objects>
                 <viewController id="lID-K2-4Bh" customClass="DecimalGeneratorViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qlc-py-3cO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Qlc-py-3cO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-Kp-DQq" userLabel="topStack">
-                                <rect key="frame" x="20" y="285" width="374" height="166"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-Kp-DQq" userLabel="topStack">
+                                <rect key="frame" x="20" y="0.0" width="374" height="166"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter binary here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vns-vF-UDE">
                                         <rect key="frame" x="20" y="0.0" width="334" height="42"/>
@@ -181,7 +234,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Generate Decimal"/>
                                         <connections>
-                                            <action selector="btn1:" destination="CU3-Ip-uJ4" eventType="touchUpInside" id="lTL-oA-Jxv"/>
                                             <action selector="btn1:" destination="eHw-Eo-0MO" eventType="touchUpInside" id="srg-zN-1nS"/>
                                             <action selector="generateDecimalBtn:" destination="lID-K2-4Bh" eventType="touchUpInside" id="hxB-k4-gXA"/>
                                         </connections>
@@ -194,8 +246,8 @@
                                     <constraint firstAttribute="trailing" secondItem="Vns-vF-UDE" secondAttribute="trailing" constant="20" id="nfR-N3-0Ia"/>
                                 </constraints>
                             </stackView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-0M-GFw">
-                                <rect key="frame" x="0.0" y="756" width="414" height="265"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-0M-GFw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                 <connections>
                                     <segue destination="OzE-i6-jkP" kind="embed" id="10l-rG-G57"/>
                                 </connections>
@@ -221,18 +273,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXA-0V-khW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="94"/>
+            <point key="canvasLocation" x="933" y="-99"/>
         </scene>
         <!--Bottom Container View Controller-->
         <scene sceneID="cub-3L-BVg">
             <objects>
                 <viewController id="eHw-Eo-0MO" customClass="BottomContainerViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sno-PU-22q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="265"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="sno-PU-22q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-Os-mU8" userLabel="topStack">
-                                <rect key="frame" x="20" y="49.666666666666657" width="374" height="166"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-Os-mU8" userLabel="topStack">
+                                <rect key="frame" x="20" y="0.0" width="374" height="166"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-Yw-rez">
                                         <rect key="frame" x="20" y="0.0" width="334" height="42"/>
@@ -252,7 +304,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Generate Binary"/>
                                         <connections>
-                                            <action selector="btn1:" destination="CU3-Ip-uJ4" eventType="touchUpInside" id="5SJ-dm-JDB"/>
                                             <action selector="btn1:" destination="eHw-Eo-0MO" eventType="touchUpInside" id="5lg-bZ-x4M"/>
                                         </connections>
                                     </button>
@@ -264,8 +315,8 @@
                                     <constraint firstItem="aDB-Yw-rez" firstAttribute="leading" secondItem="dh7-Os-mU8" secondAttribute="leading" constant="20" id="uiC-G7-CBi"/>
                                 </constraints>
                             </stackView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-Zc-8RU">
-                                <rect key="frame" x="0.0" y="-471" width="414" height="50"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-Zc-8RU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                 <connections>
                                     <segue destination="OzE-i6-jkP" kind="embed" id="eU1-x2-t5F"/>
                                 </connections>
@@ -293,66 +344,8 @@
             </objects>
             <point key="canvasLocation" x="-629" y="94"/>
         </scene>
-        <!--Bottom Container View Controller-->
-        <scene sceneID="gI5-fc-Lb4">
-            <objects>
-                <viewController id="CU3-Ip-uJ4" customClass="BottomContainerViewController" customModule="Binary_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oEP-jW-L3H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AKM-vj-MSg" userLabel="topStack">
-                                <rect key="frame" x="10" y="5" width="394" height="166"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Zz-RK-GEY">
-                                        <rect key="frame" x="20" y="0.0" width="354" height="42"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN9-b5-kyL">
-                                        <rect key="frame" x="156.33333333333334" y="62" width="81.333333333333343" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZN-l5-KD9">
-                                        <rect key="frame" x="20" y="124" width="354" height="42"/>
-                                        <color key="backgroundColor" red="0.42503788790000002" green="0.7441258181" blue="1" alpha="0.28903499119999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Generate Binary"/>
-                                        <connections>
-                                            <action selector="btn1:" destination="CU3-Ip-uJ4" eventType="touchUpInside" id="c81-1S-Rpf"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="fZN-l5-KD9" firstAttribute="leading" secondItem="AKM-vj-MSg" secondAttribute="leading" constant="20" id="BNl-bR-CkX"/>
-                                    <constraint firstAttribute="trailing" secondItem="fZN-l5-KD9" secondAttribute="trailing" constant="20" id="Cd2-fl-4bb"/>
-                                    <constraint firstAttribute="trailing" secondItem="2Zz-RK-GEY" secondAttribute="trailing" constant="20" id="oNz-xY-9Oy"/>
-                                    <constraint firstItem="2Zz-RK-GEY" firstAttribute="leading" secondItem="AKM-vj-MSg" secondAttribute="leading" constant="20" id="tRg-cb-exK"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="AKM-vj-MSg" firstAttribute="leading" secondItem="YQ2-BU-pMG" secondAttribute="leading" constant="10" id="3Dm-px-1qs"/>
-                            <constraint firstItem="AKM-vj-MSg" firstAttribute="top" secondItem="YQ2-BU-pMG" secondAttribute="top" constant="5" id="eJX-F8-gvi"/>
-                            <constraint firstItem="YQ2-BU-pMG" firstAttribute="trailing" secondItem="AKM-vj-MSg" secondAttribute="trailing" constant="10" id="qq8-ky-tmb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="YQ2-BU-pMG"/>
-                    </view>
-                    <connections>
-                        <outlet property="ans1" destination="gN9-b5-kyL" id="5qL-oB-amT"/>
-                        <outlet property="num1" destination="2Zz-RK-GEY" id="SUq-Uj-2K7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ldh-DA-Pq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2484" y="239"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="10l-rG-G57"/>
+        <segue reference="eU1-x2-t5F"/>
     </inferredMetricsTieBreakers>
 </document>
