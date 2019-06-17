@@ -50,7 +50,6 @@ class TopContainerViewController: UIViewController {
     
     @IBAction func modeSelected(_ sender: Any) {
         
-        
         guard let selectedOption = (sender as AnyObject).currentTitle, let options = Options(rawValue: selectedOption!) else{
             return
         }

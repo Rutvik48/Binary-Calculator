@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B300080B22B6BAB3001CB067 /* BinaryAdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300080A22B6BAB3001CB067 /* BinaryAdditionViewController.swift */; };
+		B300080D22B6E52A001CB067 /* BinaryMiltiplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300080C22B6E52A001CB067 /* BinaryMiltiplicationViewController.swift */; };
 		B3205A1022B564A700DEBF8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3205A0F22B564A700DEBF8D /* AppDelegate.swift */; };
 		B3205A1222B564A700DEBF8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3205A1122B564A700DEBF8D /* ViewController.swift */; };
 		B3205A1522B564A700DEBF8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3205A1322B564A700DEBF8D /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B300080A22B6BAB3001CB067 /* BinaryAdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryAdditionViewController.swift; sourceTree = "<group>"; };
+		B300080C22B6E52A001CB067 /* BinaryMiltiplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryMiltiplicationViewController.swift; sourceTree = "<group>"; };
 		B3205A0C22B564A700DEBF8D /* Binary Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binary Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3205A0F22B564A700DEBF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3205A1122B564A700DEBF8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,7 @@
 		B3205A0322B564A600DEBF8D = {
 			isa = PBXGroup;
 			children = (
+				B300080C22B6E52A001CB067 /* BinaryMiltiplicationViewController.swift */,
 				B3205A0E22B564A700DEBF8D /* Binary Calculator */,
 				B3205A0D22B564A700DEBF8D /* Products */,
 			);
@@ -66,6 +71,7 @@
 				B3205A1122B564A700DEBF8D /* ViewController.swift */,
 				B3B16B8F22B5BBD1007FD78A /* DecimalGeneratorViewController.swift */,
 				B3205A1322B564A700DEBF8D /* Main.storyboard */,
+				B300080A22B6BAB3001CB067 /* BinaryAdditionViewController.swift */,
 				B3B4331422B5842A00B79B10 /* BinaryCalculator.swift */,
 				B3205A2122B5669C00DEBF8D /* TopContainerViewController.swift */,
 				B3205A2322B566BA00DEBF8D /* BottomContainerViewController.swift */,
@@ -148,10 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3205A1222B564A700DEBF8D /* ViewController.swift in Sources */,
+				B300080D22B6E52A001CB067 /* BinaryMiltiplicationViewController.swift in Sources */,
 				B3B4331522B5842A00B79B10 /* BinaryCalculator.swift in Sources */,
 				B3B16B9022B5BBD1007FD78A /* DecimalGeneratorViewController.swift in Sources */,
 				B3205A2422B566BA00DEBF8D /* BottomContainerViewController.swift in Sources */,
 				B3205A1022B564A700DEBF8D /* AppDelegate.swift in Sources */,
+				B300080B22B6BAB3001CB067 /* BinaryAdditionViewController.swift in Sources */,
 				B3205A2222B5669C00DEBF8D /* TopContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

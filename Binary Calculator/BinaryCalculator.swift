@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class BinaryCalculator{
     
@@ -34,6 +35,19 @@ class BinaryCalculator{
         return binaryValueArr.joined()
     }
     
+    func performAddition(_ firstBinaryValue:String, _ secondBinaryValue:String) -> String{
+        
+        let totalInDecimal:Int  = validateAndGetDecimalFromBinary(binaryString: firstBinaryValue) + validateAndGetDecimalFromBinary(binaryString: secondBinaryValue)
+        return String(getDecimalToBinary(value: totalInDecimal))
+    }
+    
+    
+    func performMultiplication(_ firstBinaryValue:String, _ secondBinaryValue:String) -> String{
+        
+        let totalInDecimal:Int  = validateAndGetDecimalFromBinary(binaryString: firstBinaryValue) * validateAndGetDecimalFromBinary(binaryString: secondBinaryValue)
+        return String(getDecimalToBinary(value: totalInDecimal))
+    }
+    
     
     func validateBinary (binaryString: String) -> Bool{
         
@@ -46,7 +60,7 @@ class BinaryCalculator{
         if(counter <= 0){
             //return false
         }
-        
+
         // For loop checks each character
         for i in binaryArray{
             
@@ -54,7 +68,7 @@ class BinaryCalculator{
             counter -= 1
             
             // Validating input, it has to be either 1 or 0
-            if (i != "0" || i != "1"){
+            if (i != "0" && i != "1"){
                 return false
             }
         }
@@ -62,7 +76,10 @@ class BinaryCalculator{
     }
     
     // Generates decimal value of given binary value while validating the input
-    func getBinaryToDecimal(binaryString: String) -> Int{
+    func validateAndGetDecimalFromBinary(binaryString: String) -> Int{
+        
+        // Reseting the value so it dosen't add from last calculation
+        decimalValueHolder = 0
         
         // Removes extra white spaces from input, and turn it into an array of String
         let binaryArray = Array(binaryString.trimmingCharacters(in: .whitespacesAndNewlines))
@@ -76,7 +93,7 @@ class BinaryCalculator{
         
         // For loop checks each character
         for i in binaryArray{
-            
+
             // NOTE: counter goes MSB to LSB, decreasing counter by 1 in each round
             counter -= 1
             
@@ -104,4 +121,21 @@ class BinaryCalculator{
         
         binaryValueArr.removeAll()
     }
+    
+    
+    // Creates a small pop-up using alert class, to show user small message
+    func showToast(controller: UIViewController, message : String, seconds: Double) {
+        
+        // Setting up the alert
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.view.backgroundColor = UIColor.black
+        alert.view.alpha = 0.6
+        alert.view.layer.cornerRadius = 15
+        controller.present(alert, animated: true)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds) {
+            alert.dismiss(animated: true)
+        }
+    }
+    
 }
