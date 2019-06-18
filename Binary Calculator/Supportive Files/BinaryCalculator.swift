@@ -58,7 +58,7 @@ class BinaryCalculator{
         
         // If cunter is equal to 0 the input is empty
         if(counter <= 0){
-            //return false
+            return false
         }
 
         // For loop checks each character
@@ -88,7 +88,7 @@ class BinaryCalculator{
         
         // If cunter is equal to 0 the input is empty
         if(counter <= 0){
-            //return false
+            return -1
         }
         
         // For loop checks each character

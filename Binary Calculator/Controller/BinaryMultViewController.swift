@@ -1,25 +1,31 @@
-//  BinaryMiltiplicationViewController.swift
+//
+//  BinaryMultViewController.swift
 //  Binary Calculator
 //
-//  Created by RV on 6/16/19.
+//  Created by RV on 6/17/19.
 //  Copyright © 2019 RV. All rights reserved.
 //
 
 import UIKit
 
-class BinaryMiltiplicationViewController: UIViewController {
-
+class BinaryMultViewController: UIViewController {
     
     @IBOutlet weak var entryField1: UITextField!
     @IBOutlet weak var entryField2: UITextField!
+    //    @IBOutlet weak var entryField1: UITextField!
+//    @IBOutlet weak var entryField2: UITextField!
     @IBOutlet weak var answerLabel: UILabel!
     let binaryCalculator = BinaryCalculator()
-
+    
+    @IBOutlet var mainView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+        // Creating a gradient
+        mainView.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.blue)
     }
     
     
@@ -43,7 +49,7 @@ class BinaryMiltiplicationViewController: UIViewController {
     }
     
     func performAddition() -> String{
-        
+
         return binaryCalculator.performMultiplication(entryField1.text!, entryField2.text!)
     }
     
@@ -51,19 +57,20 @@ class BinaryMiltiplicationViewController: UIViewController {
     @IBAction func generateAnsBtn(_ sender: Any) {
         
         if (validateInput( entryField1) && validateInput(entryField2)){
-            
+
             answerLabel.text =  performAddition()
         }
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+
