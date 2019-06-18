@@ -12,6 +12,7 @@ class BottomContainerViewController: UIViewController {
     
     @IBOutlet weak var ans1: UILabel!
     @IBOutlet weak var num1: UITextField!
+    @IBOutlet var mainView: UIView!
     
     var tempNum:Int = 0
 
@@ -19,6 +20,8 @@ class BottomContainerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Create gradient background for the main view
+        mainView.setGradientMainView()
     }
     
     // Generates binery of given integer

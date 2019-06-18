@@ -12,12 +12,11 @@ class BinaryMultViewController: UIViewController {
     
     @IBOutlet weak var entryField1: UITextField!
     @IBOutlet weak var entryField2: UITextField!
-    //    @IBOutlet weak var entryField1: UITextField!
-//    @IBOutlet weak var entryField2: UITextField!
     @IBOutlet weak var answerLabel: UILabel!
+     @IBOutlet var mainView: UIView!
+    
     let binaryCalculator = BinaryCalculator()
     
-    @IBOutlet var mainView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +24,7 @@ class BinaryMultViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Creating a gradient
-        mainView.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.blue)
+        mainView.setGradientMainView()
     }
     
     

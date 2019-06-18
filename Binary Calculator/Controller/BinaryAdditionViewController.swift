@@ -13,12 +13,17 @@ class BinaryAdditionViewController: UIViewController {
     @IBOutlet weak var entryField1: UITextField!
     @IBOutlet weak var entryField2: UITextField!
     @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet var mainView: UIView!
+    
     let binaryCalculator = BinaryCalculator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Create gradient background for the main view
+        mainView.setGradientMainView()
     }
     
     func validateInput(_ entryField:UITextField) -> Bool{
