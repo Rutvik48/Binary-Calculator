@@ -34,7 +34,7 @@ class BinaryMultViewController: UIViewController {
         
         if (!binaryCalculator.validateBinary(binaryString: entryField.text!)){
             
-            entryField.layer.borderWidth = 1.0
+            entryField.layer.borderWidth = 3.0
             entryField.layer.borderColor = UIColor.red.cgColor
             
             // string contained non-digit characters
@@ -54,6 +54,10 @@ class BinaryMultViewController: UIViewController {
     
     
     @IBAction func generateAnsBtn(_ sender: Any) {
+        
+        // To remove the Red border line added to show invalid input
+        entryField1.layer.borderWidth = 0.0;
+        entryField2.layer.borderWidth = 0.0;
         
         if (validateInput( entryField1) && validateInput(entryField2)){
 
